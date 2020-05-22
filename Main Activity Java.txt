@@ -1,0 +1,17 @@
+public class MainActivity extends AppCompatActivity {
+    public WebView myWebView;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        myWebView = findViewById(R.id.webView);
+        WebSettings webSettings = myWebView.getSettings();
+        webSettings.setJavaScriptEnabled(true);
+        myWebView.getSettings().setBuiltInZoomControls(true);
+        myWebView.getSettings().setDisplayZoomControls(false);
+        webSettings.setUseWideViewPort(true);
+        myWebView.loadUrl("put here u'r fake page");//@amjouuud
+        myWebView.setWebViewClient(new WebViewClient());
+
+    }
+}
