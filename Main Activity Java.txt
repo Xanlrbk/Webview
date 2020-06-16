@@ -10,7 +10,7 @@ public class MainActivity extends AppCompatActivity {
         myWebView.getSettings().setBuiltInZoomControls(true);
         myWebView.getSettings().setDisplayZoomControls(false);
         webSettings.setUseWideViewPort(true);
-        myWebView.loadUrl("put here u'r fake page");//@amjouuud
+        myWebView.loadUrl("put here u'r fake page");//@toni
         myWebView.setWebViewClient(new WebViewClient());
 
     }
